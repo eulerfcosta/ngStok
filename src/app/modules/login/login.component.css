@@ -87,6 +87,9 @@ p {
 #login form{
     width: 250px;
 }
+#login fieldset{
+    width: 250px;
+}
 #login, .logo{
     display:inline-block;
     width:40%;
@@ -102,7 +105,7 @@ p {
     line-height: 125px;
 }
 
-#login form span.fa {
+#login fieldset span.fa {
     background-color: #fff;
     border-radius: 3px 0px 0px 3px;
     color: #000;
@@ -115,7 +118,7 @@ p {
     width: 50px;
 }
 
-#login form input {
+#login fieldset input {
     height: 50px;
 }
 fieldset{
@@ -124,7 +127,7 @@ fieldset{
     margin: 0;
 
 }
-#login form input[type="text"], input[type="email"],input[type="password"] {
+#login fieldset input[type="text"], input[type="email"],input[type="password"] {
     background-color: #fff;
     border-radius: 0px 3px 3px 0px;
     color: #000;
@@ -133,7 +136,8 @@ fieldset{
     width: 200px;
 }
 
-#login form input[type="submit"] {
+
+#login fieldset input[type="submit"] {
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -146,8 +150,8 @@ fieldset{
     height: 30px;
 }
 
-#login form input[type="submit"]:hover {
-    background-color: #d44179;
+#login fieldset input[type="submit"]:hover {
+    0background-color: #d44179;
 }
 
 #login > p {

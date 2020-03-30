@@ -2,28 +2,30 @@
     <div class="container">
         <div class="middle">
             <div id="login">
-                <form action="javascript:void(0);" method="get">
+                <div>
+                <!--<form action="javascript:void(0);" method="get"> -->
                     <fieldset class="clearfix">
                         <p>
                             <span class="fa fa-user"></span>
-                                <input  id="email" type="email"  Placeholder="E-Mail" required />
+                                <input  class="inputclass" id="email" type="email"  Placeholder="E-Mail" required />
                         </p>
                         <p>
                             <span class="fa fa-lock"></span>
-                            <input id="senha" type="password"  Placeholder="Password" required />
+                            <input class="inputclass" id="senha" type="password"  Placeholder="Password" required />
                         </p>
                         <div>
                             <span style="width:48%; text-align:left;  display: inline-block;">
                                 <a class="small-text" href="#"> Forgot password?</a>
                             </span>
                             <span style="width:50%; text-align:right;  display: inline-block;">
-                                <input type="submit" value="Sign In">
+                                <input type="submit" name="action" (click)="auth()" value="Sign In">
                             </span>
                         </div>
                     </fieldset>
                     <div class="clearfix">
                     </div>
-                </form>
+                </div>
+                <!--</form> -->
                 <div class="clearfix">
                 </div>
             </div>
