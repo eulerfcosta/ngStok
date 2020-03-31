@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { AuthGuardService } from './guards/auth.guard.service';
 import { AppComponent } from './app.component';
 import { AdminModule } from './modules/admin/admin.module';
 import { LoginModule } from './modules/login/login.module';
@@ -20,7 +21,7 @@ import { HomeComponent } from './modules/home/home.component';
     LoginModule,
     HomeModule
   ],
-  providers: [],
+  providers: [AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
