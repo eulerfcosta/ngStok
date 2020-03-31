@@ -7,11 +7,11 @@
                     <fieldset class="clearfix">
                         <p>
                             <span class="fa fa-user"></span>
-                                <input  class="inputclass" id="email" type="email"  Placeholder="E-Mail" required />
+                                <input [(ngModel)]="usuario.email" id="email" type="email"  Placeholder="E-Mail" required />
                         </p>
                         <p>
                             <span class="fa fa-lock"></span>
-                            <input class="inputclass" id="senha" type="password"  Placeholder="Password" required />
+                            <input [(ngModel)]="usuario.senha" id="senha" type="password"  Placeholder="Password" required />
                         </p>
                         <div>
                             <span style="width:48%; text-align:left;  display: inline-block;">

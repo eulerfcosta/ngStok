@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './auth.service';
+import { Usuario } from '../../model/usuario';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,21 @@ import { AuthService } from './auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private authService: AuthService) { }
+    usuario: Usuario = new Usuario();
 
-  ngOnInit(): void {
-  }
+    constructor(private authService: AuthService) { }
 
-  auth(){
+    ngOnInit(): void {
+    }
 
-  }
-
+    auth(){
+        console.log('teste');
+        console.log(this.usuario);
+        this.authService.auth(this.usuario);
+        if (this.authService.getAutenticado()) {
+            console.log('Autenticado');
+        } else {
+            console.log('Usuario inexistente');
+        }
+    }
 }
