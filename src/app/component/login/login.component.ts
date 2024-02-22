@@ -5,6 +5,7 @@ import {MatInput} from '@angular/material/input';
 import {FormControl, ReactiveFormsModule} from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
 import {MatIcon} from '@angular/material/icon';
+import {MatButton} from '@angular/material/button';
 
 @Component({
     selector: 'app-login',
@@ -21,7 +22,8 @@ import {MatIcon} from '@angular/material/icon';
         MatCardContent,
         MatIcon,
         MatCardFooter,
-        MatCardTitle
+        MatCardTitle,
+        MatButton
     ],
     templateUrl: './login.component.html',
     styleUrl: './login.component.css'
