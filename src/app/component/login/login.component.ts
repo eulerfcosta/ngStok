@@ -5,6 +5,7 @@ import {MatInput} from '@angular/material/input';
 import {MatIcon} from '@angular/material/icon';
 import {MatButton} from '@angular/material/button';
 import {ReactiveFormsModule} from '@angular/forms';
+import {RouterLink} from '@angular/router';
 
 @Component({
     selector: 'app-login',
@@ -22,7 +23,8 @@ import {ReactiveFormsModule} from '@angular/forms';
         MatCardFooter,
         MatCardTitle,
         MatButton,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        RouterLink
     ],
     templateUrl: './login.component.html',
     styleUrl: './login.component.css'

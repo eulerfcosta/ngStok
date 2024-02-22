@@ -1,0 +1,27 @@
+.base-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.sidebar {
+    float: left;
+    display: inline-block;
+    width: 200px;
+
+}
+.content {
+    flex-grow: 1;
+    background: #71FA4C;
+    margin-left: 100px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.middle {
+    display: flex;
+    gap: 10px
+}
+
