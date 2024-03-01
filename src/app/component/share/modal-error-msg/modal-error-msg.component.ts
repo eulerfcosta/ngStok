@@ -1,7 +1,5 @@
 import {Component, Inject} from '@angular/core';
-import {animate, style, transition, trigger} from '@angular/animations';
 import {NgIf} from '@angular/common';
-import {AuthService} from '../../../service/auth/auth.service';
 import {DialogRef} from '@angular/cdk/dialog';
 import {MAT_DIALOG_DATA, MatDialogModule} from '@angular/material/dialog';
 import {MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardTitle} from '@angular/material/card';

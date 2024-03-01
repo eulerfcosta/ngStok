@@ -48,7 +48,7 @@ export class LoginComponent {
         this.authService.login(this.email.value, this.senha.value).subscribe({
                 next: (response) => {
                     console.log(response);
-                    let user = new User();
+                    let user;
                     user = response;
                     console.log(user.token);
                 },
