@@ -1,0 +1,54 @@
+.modal {
+    background: #d2cece;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #333;
+    min-width: 400px;
+    min-height: 200px;
+    padding-bottom: 5px;
+    z-index: 11;
+}
+
+.header {
+    background-color: #FF0000;
+    padding: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: large;
+}
+
+.title {
+    background-color: #d2cece;
+    padding: 15px;
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+}
+
+.action {
+    background-color: #d2cece;
+    padding: 15px;
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+}
+
+.btn-close {
+    background-color: #FF0000;
+    padding: 15px;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: large;
+}
+
+.overlay {
+    background: #000;
+    height: 200vh;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+}
