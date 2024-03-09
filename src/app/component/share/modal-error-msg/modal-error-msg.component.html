@@ -1,0 +1,17 @@
+<mat-card class="modal">
+    <mat-card-header class="header">
+        Erro
+    </mat-card-header>
+    <mat-card-title class="title">
+        Mensagem
+    </mat-card-title>
+    <mat-card-content>
+        <div>
+            {{ data.text }}
+        </div>
+    </mat-card-content>
+    <mat-card-actions class="action">
+        <button mat-button (click)="close()" class="btn-close"> close
+        </button>
+    </mat-card-actions>
+</mat-card>

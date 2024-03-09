@@ -1,23 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from './modules/login/auth.service';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import {MatSlideToggle} from '@angular/material/slide-toggle';
+import {LoginComponent} from './component/login/login.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, MatSlideToggle, LoginComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrl: './app.component.css'
 })
-export class AppComponent  implements OnInit {
-    title = 'ngStok';
-    mostrarMenu = false;
-
-    constructor(private authService: AuthService){
-    }
-
-    ngOnInit(){
-        this.authService.mostrarMenuEmitter.subscribe(
-            mostrar => this.mostrarMenu = mostrar
-        );
-    }
-
-
+export class AppComponent {
+  title = 'ngStok';
 }
